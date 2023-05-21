@@ -1,0 +1,428 @@
+:root {
+    --color-primary: #EAD2CDB2;
+    --color-secondary: #ffffff;
+    --color-font: #000000e6;
+
+    --color-shadow: #d287d5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.timer {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+/* ---CONTENT--- */
+#timer_section {
+    visibility: hidden;
+    margin: 5px;
+    height: 100%;
+    grid-area: 1 / 1 / 6 / 6;
+}
+
+#customize_section {
+    margin: 5px;
+    height: 100%;
+    grid-area: 1 / 1 / 6 / 6;
+}
+
+#custom_timer {
+    height: 100%;
+}
+
+.time_container {
+    height: 85%;
+    margin-inline: auto;
+}
+
+#custom {
+    position: relative;
+    font-style:normal;
+    font-weight:600;
+    font-size: 5vh;
+    font-family: 'Raleway', sans-serif;
+    line-height: 59px;
+    /* identical to box height */
+    text-align: center;
+    text-decoration-line: underline;
+    width: min(42.5rem, 100%);
+    margin-inline: auto;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    margin-bottom: 1vw;
+    height: 15%;
+    margin-top: 3%;
+}
+
+.customization {
+    height: 75%;
+    margin-top:8%;
+    display: flex;
+    flex-direction: column;
+}
+
+#work {
+    font-style:normal;
+    font-weight:600;
+    font-size: 5vh;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+#break {
+    font-style:normal;
+    font-weight:600;
+    font-size: 5vh;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.custom_work {
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+}
+
+.custom_break {
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+}
+
+.time_title {
+    flex: 35%;
+    text-align: center;
+    justify-content: center;
+    margin:auto;
+}
+
+.custom_worktime {
+    flex: 50%;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-inline: 4%;
+
+    font-style:normal;
+    font-weight:600;
+    font-size: 9vh;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.custom_worktime p {
+    margin: auto;
+}
+
+.custom_breaktime {
+    flex: 40%;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-inline: 4%;
+
+    font-style:normal;
+    font-weight:600;
+    font-size: 9vh;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.custom_breaktime p {
+    margin: auto;
+}
+
+.custom_button {
+    
+    flex: 15%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+}
+
+.custom_button button {
+    font-size: 2.5vw;
+    width: auto;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#work_button {
+    right: 1.125%;
+}
+
+.finish_setup {
+    width: 20vh;
+    height: 8vh;
+    display: block;
+    border: none;
+    outline: none;
+    text-align: center;
+    justify-content: center;
+    margin:auto;
+
+    background: var(--color-secondary);
+    border-radius: 90px;
+
+}
+
+.finish_setup button {
+    color: var(--color-font);
+    background-color: transparent;
+    border: none;
+    justify-content: center;
+
+    cursor: pointer;
+
+    font-style:normal;
+    font-weight:600;
+    font-size: 5vh;
+    text-align: center;
+    text-decoration-line: underline;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 5%;
+}
+
+
+#final_timer {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.time_nav {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 20vh;
+    height: 8vh;
+    display: block;
+    border: none;
+    outline: none;
+    text-align: center;
+    justify-content: center;
+    margin-top: 4%;
+    margin-left: 2%;
+    position: relative;
+
+    background: var(--color-secondary);
+    border-radius: 90px;
+}
+
+.time_nav button {
+    margin: auto;
+    margin-top: 5%;
+    color: var(--color-font);
+    background-color: transparent;
+    border: none;
+    justify-content: center;
+
+    cursor: pointer;
+
+    font-style:normal;
+    font-weight:600;
+    font-size: 5vh;
+    text-align: center;
+    text-decoration-line: underline;
+    font-family: 'Raleway', sans-serif;
+}
+
+.final_time_container {
+    grid-area: 1 / 1 / 6 / 6;
+    direction: flex;
+    flex-direction: column;
+}
+
+#final {
+    position: relative;
+    font-style:normal;
+    font-weight:600;
+    font-size: 5vh;
+    font-family: 'Raleway', sans-serif;
+    line-height: 59px;
+    /* identical to box height */
+    text-align: center;
+    text-decoration-line: underline;
+    width: min(42.5rem, 100%);
+    margin-inline: auto;
+    padding-inline:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    height: 15%;
+    margin-top: 1.5%;
+}
+
+.final_time_clock {
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+}
+
+.timer_part {
+    flex: 50%;
+    margin: auto;
+}
+
+.circle {  
+    box-sizing: border-box;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    border: 0.75vw solid #FFFFFF;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    margin:auto;
+}
+
+.time {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    height: 100%;
+
+    font-style:normal;
+    font-weight:600;
+    font-size: 9vh;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.control_panel {
+    flex: 50%;
+    margin-top: 8%;
+    justify-content: center;
+    align-items: center;
+}
+
+.control_panel_container {
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+    flex: 60%;
+
+    display: flex;
+    flex-direction: column;
+    
+    font-style:normal;
+    font-weight:600;
+    font-size: 3vh;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+    justify-content: center;
+
+    padding-bottom: 10%;
+}
+
+
+.panel p {
+    height: 25%;
+    color: var(--color-secondary);
+}
+
+.panel p.active {
+    height: 75%;
+    color: var(--color-font);
+    font-size: 10vh;
+}
+.time_control {
+    flex: 40%;
+    margin: auto;
+}
+.time_control button {
+    width: 22.5vh;
+    height: 8vh;
+    background: var(--color-secondary);
+    border-radius: 90px;
+    border: none;
+    cursor: pointer;
+
+    font-style:normal;
+    font-weight:600;
+    font-size: 5vh;
+    text-align: center;
+    text-decoration-line: underline;
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.time_control #pause {
+    display: none;
+}
+
+.time_control #resume {
+    display: none;
+}
+
+.time_control #reset {
+    position: inherit;
+    margin-top: 1.5%;   
+    display: none;
+}
+
+#time_back {
+    display: none;
+}
+
+.auto_pomo {
+    position: relative;
+    display: block;
+    border: none;
+    outline: none;
+    text-align: center;
+    justify-content: center;
+}
+.auto_pomo button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1vw;
+    /* identical to box height */
+    
+    text-align: center;
+    vertical-align: middle;
+    text-decoration-line: underline;
+
+}

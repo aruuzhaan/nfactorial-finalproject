@@ -1,0 +1,194 @@
+header{
+    position: relative;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    font-family: 'Raleway', sans-serif;
+
+}
+#home{
+    border: 2px solid #c8a656;
+    padding: 3px;
+    border-radius: 10%;
+    background-color: #c8a656;
+}
+
+#about{
+        border: 2px solid #c8a656;
+        padding: 3px;
+        border-radius: 10%;
+        background-color: #c8a656;
+    }
+
+#places{
+        border: 2px solid #c8a656;
+        padding: 3px;
+        border-radius: 10%;
+        background-color: #c8a656;
+    }
+
+header .navigation a{
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 20px;
+    border-radius: 30px;
+    transition: 0.3s;
+    transition-property: all;
+}
+
+header .navigation a:not(:last-child){
+    margin-right: 40px;
+}
+
+header .logo{
+    color: #000;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+
+}
+
+header .navigation a:hover{
+    background: #fff;
+    text-decoration: underline;
+}
+section::before{
+    content: "";
+    background: url(images/atriumtwo.png)no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 45%;
+    font-family: 'Raleway';
+ }
+
+ #header{
+   position: fixed;
+   top: 10%;
+   left: 35%;
+   text-align:center;
+ }
+
+
+.container-box {
+    width:100%;
+    text-align:center;
+}
+.settings-title{
+    font-style:normal;
+    font-weight:600;
+    font-size: 5vh;
+    text-align: center;
+    text-decoration-line: underline;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 5vw;
+    padding-top:2vw;
+
+
+}
+.sound-title{
+    top:65%;
+    text-align:left;
+    font-size:4vh;
+    font-weight:800;
+    font-family: 'Raleway', sans-serif;
+
+}
+#overlay {
+    margin: auto;
+    position: fixed;
+    top: 5vw;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 60%;
+    background-color: rgba(217, 217, 217, 0.5);
+    z-index: 2;
+}
+
+#timer {
+    margin: auto;
+    position: fixed;
+    top: 5vw;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 60%;
+    background-color: rgba(217, 217, 217, 0.5);
+    z-index: 2;
+}
+
+#customize_section {
+    margin-top: 12%;
+}
+
+#timer_section {
+    margin-top: 12%;
+}
+
+.close-button{
+    font-size: 6vw;
+    font-weight:800;
+    float:right;
+    cursor: pointer;
+    border: none;
+    background:none;
+    margin-right: 1vw;
+    position: absolute;
+    right: 0%;
+    transform: translate(-0%, -0%);
+    z-index: 1000;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:0;
+    align-content: space-between;
+    padding-bottom:5vw;
+}
+audio {
+    width: 12vw;
+    height: 2vw;
+}
+
+audio::-webkit-media-controls-panel {
+    -webkit-justify-content: center;
+    height: 25px;
+
+}
+
+/* Removes the timeline */
+audio::-webkit-media-controls-timeline {
+    display: none;
+}
+
+/* Removes the time stamp */
+audio::-webkit-media-controls-current-time-display {
+    display: none;
+}
+audio::-webkit-media-controls-time-remaining-display {
+    display: none;
+}
+
+#spotify{
+    margin-top: 80px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 3;
+    left:0;
+}
